@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #E4EfE9;
+}
+
+hr {
+    width:50%;
+    margin:0 auto;
+}
+
+.webDev {
+    font-size: 1rem;
+    font-weight: bolder;
+    
+}
+
+.profDesc {
+    font-size: 20px;
+}
+
+.proj, 
+.tools, 
+.cont {
+    padding-top: 10%;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.pillProj, .pillTools {
+    width: 200px;
+    background-color:rgb(255, 172, 28);
+}
+
+.navLeftMost {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 172, 28);
+}
+
+.profile {
+    background-image: linear-gradient(180deg, #02AABD, #00CDAC);
+
+}
+
+img {
+    width: 400px;
+}
+
+.myProjects {
+    background-image: linear-gradient(180deg, #00CDAC, #E3963E);
+}
+
+.toolsKo {
+    background-image: linear-gradient(180deg, #E3963E, #E4EfE9);
+    background-color: rgb(255, 191, 0);
+}
+
+.contactMe {
+    background-image: linear-gradient(180deg, #E4EfE9, #E4EfE9);
+}
+
+.pillCont {
+    align-items: center;
+    border-radius: 40px;
+    margin: auto;
+    width: 300px;
+}
+
+.pillCont a {
+    text-decoration: none;
+}
+
+.footerKo {
+    background-color: linear-gradient(180deg,#E4EfE9, #E4EfE9);
+}
