@@ -32,7 +32,7 @@ hr {
 .cont {
     padding-top: 10%;
     text-decoration: none;
-    color: antiquewhite;
+    color: rgb(250, 235, 215);
 }
 
 .pillProj, .pillTools {
@@ -49,15 +49,22 @@ hr {
     background-image: linear-gradient(180deg, #02AABD, #00CDAC);
 
     &Pic {
-        width: 360px;
-}
-
+        width: 390px;
+    }
 }
 
 img {
-    width: 320px;
+    width: 150px;
 }
 
+.img {
+    &__1,
+    &__2,
+    &__3 {
+        width: 300px;
+    }
+}
+ 
 .myProjects {
     background-image: linear-gradient(180deg, #00CDAC, #E3963E);
 }
