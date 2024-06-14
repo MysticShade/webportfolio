@@ -10,18 +10,16 @@ $color-light-grey: linear-gradient(180deg, #E4EfE9, #E4EfE9);
     // border: 2px solid red;
 }
 
-body {
-//   width: 100%;
-//   height: 100%;
-}
+
+
 
 html {
     background-color: #02B0BA;
 }
 
 hr {
-    width:50%;
-    margin:0 auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .webDev {
@@ -65,7 +63,7 @@ hr {
 }
 
 .links:hover {
-    color: #a52a2a56;
+    color: #206ce656;
 }
 
 .link:hover::after {
@@ -152,6 +150,10 @@ img {
 
 .theFooter {
     background-color: $color-light-grey;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    bottom: 0;
 }
 
 // Hover effect for icons and contact button
