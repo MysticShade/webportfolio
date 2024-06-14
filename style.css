@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: #E4EfE9;
+  background-color: #02B0BA;
 }
 
 hr {
@@ -21,12 +21,44 @@ hr {
   font-size: 20px;
 }
 
-.proj,
-.tools,
-.cont {
-  padding-top: 10%;
+.navBar {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgb(255, 172, 28);
+}
+
+.links {
+  position: relative;
+  height: 10px;
+  margin: 5px;
   text-decoration: none;
-  color: rgb(250, 235, 215);
+  color: #faebd7;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  background-color: #01B0B9;
+  height: 3px;
+  top: 25px;
+  left: -5px;
+  width: 0;
+  transition: 0.2s;
+}
+
+.link-2 {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.links:hover {
+  color: rgba(165, 42, 42, 0.337254902);
+}
+
+.link:hover::after {
+  width: 76px;
 }
 
 .pillProj, .pillTools {
@@ -44,14 +76,33 @@ hr {
 }
 .profilePic {
   width: 390px;
+  border-radius: 250px 750px 250px 750px/750px 250px 750px 250px;
+  animation: wobble 10s ease-in-out alternate-reverse infinite;
+}
+@keyframes wobble {
+  25% {
+    border-radius: 51% 49% 60% 40%/25% 70% 30% 75%;
+  }
+  50% {
+    border-radius: 51% 49% 51% 49%/34% 51% 49% 66%;
+  }
+  75% {
+    border-radius: 43% 57% 51% 49%/54% 39% 61% 46%;
+  }
+  100% {
+    border-radius: 30% 70% 32% 68%/68% 31% 69% 32%;
+  }
 }
 
 img {
   width: 150px;
+  aspect-ratio: 1;
+  object-fit: scale-down;
+  border-width: 0;
 }
 
 .img__1, .img__2, .img__3 {
-  width: 300px;
+  width: 250px;
 }
 
 .myProjects {
@@ -81,3 +132,36 @@ img {
 .theFooter {
   background-color: linear-gradient(180deg, #E4EfE9, #E4EfE9);
 }
+
+.linkedIcons, #contact {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  /*
+  // Shorthand propery transition
+  transition: transform 0.3 ease 0s;
+  */
+  /*
+  // You can shorten it even more if you remove 0s as it is default.
+  transition: transform 0.3 ease;
+  */
+}
+
+.linkedIcons:hover, #contact:hover {
+  transform: translateY(-7px);
+}
+
+/*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    overflow: hidden;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #ecf0f1;
+
+*/
