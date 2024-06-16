@@ -1,17 +1,22 @@
 // Variables 
 $color-yellow-orange: rgb(255, 172, 28);
 $color-light-grey: linear-gradient(180deg, #E4EfE9, #E4EfE9);
-
+$font-choice-one-major: "Major Mono Display", monospace;
 
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
     // border: 2px solid red;
+    
 }
-
-
-
 
 html {
     background-color: #02B0BA;
@@ -25,53 +30,88 @@ hr {
 .webDev {
     font-size: 1rem;
     font-weight: bolder;
-    
 }
 
 .profDesc {
     font-size: 20px;
 }
+
 .navBar {
     margin-top: 10px;
     padding: 15px;
     background-color: rgb(255, 172, 28);
 }
-.links {
+
+.link {
+    font-family: $font-choice-one-major;
+    font-size: 15px;
     position: relative;
     height: 10px;
-    margin: 5px;
     text-decoration: none;
     color: #faebd7;
-    letter-spacing: 2px;
-    margin: 20px;
+    letter-spacing: 1px;
+    margin: 12px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: #01B0B9;
+        height: 3px;
+        top: 25px;
+        left: -10px;
+        width: 0;
+        transition: 0.2s;
+    }
+
+    &-1 {
+        padding-left: 8px;
+    }
+
+    &-2 {
+        padding-left: 12px;
+        padding-right: 10px;
+    }
+
+    &-3 {
+        padding-left: 5px;
+    }
+
+    // animations
+    &:hover {
+        color: #0a0a0a;
+        transition: color ease 0.5s;
+    }
+    
+        &:hover::after {
+            width: 125%;
+        } 
+    
+
 }
 
 
-.link::after {
-    content: '';
-    position: absolute;
-    background-color: #01B0B9;
-    height: 3px;
-    top: 25px;
-    left: -5px;
-    width: 0;
-    transition: 0.2s;
-}
-.link-2 {
- padding-left: 10px;
- padding-right: 5px;
-}
 
-.links:hover {
-    color: #206ce656;
-}
 
-.link:hover::after {
-    width: 76px;
+
+
+// .link-2 {
+//  padding-left: 12px;
+//  padding-right: 5px;
+// }
+
+
+
+.pillProj {
+    padding: 10px;
+    
+    &:hover {
+        
+    }
 }
 
 .pillProj, .pillTools {
-    width: 200px;
+    font-family: $font-choice-one-major;
+    width: 230px;
     background-color: $color-yellow-orange;
 }
 
